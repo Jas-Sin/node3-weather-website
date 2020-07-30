@@ -16,7 +16,7 @@ const forecast = (latitude , longitude , callback) =>
         else
         {
            callback (undefined, 
-               body.current.weather_descriptions[0] + '. The temperature is '+ body.current.temperature + ' degrees, It feels like ' +body.current.feelslike+ ' degrees. The humidity levels are at '+body.current.humidity+'% and the chance of rain is '+body.current.precip*100+ '%. Hope you have a nice day  ! :)' 
+               body.current.weather_descriptions[0] + '. The temperature is '+ body.current.temperature + ' degrees, It feels like ' +body.current.feelslike+ ' degrees. The humidity levels are at '+body.current.humidity+'% and the precipitation is '+body.current.precip+ 'mm. Hope you have a nice day  ! :)' 
               )
         }
      })
